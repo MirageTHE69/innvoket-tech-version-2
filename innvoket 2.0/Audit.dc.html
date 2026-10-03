@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Book your free Patient Growth Audit | Innvoket Tech</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F8FAFB;color:#10262D;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#0F4C5C;text-decoration:none}
+a:hover{color:#2EC4B6}
+input::placeholder{color:#9DB3B9}
+@keyframes drift1{0%,100%{transform:translate(0,0)}50%{transform:translate(16px,-14px)}}
+@keyframes drift2{0%,100%{transform:translate(0,0)}50%{transform:translate(-14px,12px)}}
+@keyframes popIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+</style>
+</helmet>
+
+<div aria-hidden="true" style="position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none">
+<div style="position:absolute;right:-140px;top:120px;transform:rotate(-32deg)"><div style="width:460px;height:160px;border-radius:999px;background:#E4F5F2;animation:drift1 16s ease-in-out infinite"></div></div>
+<div style="position:absolute;left:-120px;bottom:40px;transform:rotate(-32deg)"><div style="width:340px;height:120px;border-radius:999px;border:2px solid rgba(15,76,92,.14);animation:drift2 20s ease-in-out infinite"></div></div>
+<div style="position:absolute;left:38%;bottom:-40px;transform:rotate(-32deg)"><div style="width:180px;height:64px;border-radius:999px;background:#BFEDE8;animation:drift1 18s ease-in-out infinite"></div></div>
+</div>
+<nav style="border-bottom:1px solid #E3ECEF;background:#fff">
+  <div style="max-width:1160px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between">
+    <a href="Landing Page v2 B Capsules.dc.html" style="display:flex;align-items:center;gap:10px;color:#10262D">
+      <span style="width:28px;height:28px;border-radius:9px;background:#0F4C5C;display:grid;place-items:center"><span style="width:10px;height:10px;border-radius:50%;background:#2EC4B6"></span></span>
+      <span style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:19px;letter-spacing:-0.03em">{{ brand }}</span>
+    </a>
+    <a href="Landing Page v2 B Capsules.dc.html" style="font-size:15px;font-weight:500;color:#5B7F88">← Back to site</a>
+  </div>
+</nav>
+
+<sc-if value="{{ notDone }}" hint-placeholder-val="{{ true }}">
+<main style="max-width:1160px;margin:0 auto;padding:clamp(48px,8vw,96px) 24px;display:flex;flex-wrap:wrap;gap:clamp(40px,6vw,80px);align-items:flex-start">
+  <div style="flex:1 1 360px">
+    <div style="font-size:14px;font-weight:600;color:#0F4C5C;margin-bottom:14px">Free Patient Growth Audit</div>
+    <h1 style="margin:0;font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(36px,4.8vw,56px);line-height:1.05;letter-spacing:-0.04em;text-wrap:balance">See where your clinic stands.</h1>
+    <p style="margin:20px 0 0;font-size:18px;line-height:1.6;color:#5B7F88;max-width:460px">A 20-minute call. No obligation.</p>
+    <div style="margin-top:40px;display:flex;flex-direction:column;gap:24px">
+      <div style="display:flex;gap:16px"><span style="width:32px;height:32px;border-radius:10px;background:#E6F6F4;color:#0F4C5C;display:grid;place-items:center;font-weight:700;font-size:13px;flex:none">1</span><div><div style="font-weight:600;font-size:16px">We review your online presence</div><div style="color:#5B7F88;margin-top:4px;line-height:1.55;font-size:15px">Your Google profile, website, reviews and how calls are handled.</div></div></div>
+      <div style="display:flex;gap:16px"><span style="width:32px;height:32px;border-radius:10px;background:#E6F6F4;color:#0F4C5C;display:grid;place-items:center;font-weight:700;font-size:13px;flex:none">2</span><div><div style="font-weight:600;font-size:16px">We compare you with clinics nearby</div><div style="color:#5B7F88;margin-top:4px;line-height:1.55;font-size:15px">Where the top clinics in your area are ahead, and why.</div></div></div>
+      <div style="display:flex;gap:16px"><span style="width:32px;height:32px;border-radius:10px;background:#E6F6F4;color:#0F4C5C;display:grid;place-items:center;font-weight:700;font-size:13px;flex:none">3</span><div><div style="font-weight:600;font-size:16px">You leave with a 90-day plan</div><div style="color:#5B7F88;margin-top:4px;line-height:1.55;font-size:15px">Yours to keep, whether or not you work with us.</div></div></div>
+    </div>
+  </div>
+
+  <form onSubmit="{{ submit }}" style="flex:1 1 440px;background:#fff;border:1px solid #E3ECEF;border-radius:30px;padding:clamp(24px,4vw,40px);box-shadow:0 1px 2px rgba(16,38,45,.03),0 20px 48px rgba(16,38,45,.05);display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px">
+    <sc-for list="{{ fields }}" as="f" hint-placeholder-count="7">
+      <label style="display:flex;flex-direction:column;gap:7px;font-size:14px;font-weight:600">
+        <span>{{ f.label }}</span>
+        <input name="{{ f.name }}" type="{{ f.type }}" required="{{ f.req }}" placeholder="{{ f.ph }}" style="font:inherit;font-weight:400;font-size:16px;padding:13px 16px;border-radius:14px;border:1px solid #D6E3E7;background:#F8FAFB;color:#10262D;outline:none" style-focus="border-color:#2EC4B6;box-shadow:0 0 0 4px rgba(46,196,182,.18);background:#fff">
+      </label>
+    </sc-for>
+    <label style="display:flex;flex-direction:column;gap:7px;font-size:14px;font-weight:600">
+      <span>Number of practitioners</span>
+      <select name="practitioners" required="" style="font:inherit;font-weight:400;font-size:16px;padding:13px 16px;border-radius:14px;border:1px solid #D6E3E7;background:#F8FAFB;color:#10262D">
+        <option value="">Select</option><option>1</option><option>2–4</option><option>5–10</option><option>11+</option>
+      </select>
+    </label>
+    <label style="grid-column:1 / -1;display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:#3E626B;cursor:pointer">
+      <input type="checkbox" name="consent" required="" style="width:20px;height:20px;margin:1px 0 0;accent-color:#0F4C5C;flex:none">
+      <span>I agree to be contacted by {{ brand }} about my audit. I can unsubscribe at any time.</span>
+    </label>
+    <sc-if value="{{ error }}"><p style="grid-column:1 / -1;margin:0;color:#B42318;font-size:14px">{{ error }}</p></sc-if>
+    <button type="submit" style="grid-column:1 / -1;all:unset;box-sizing:border-box;grid-column:1 / -1;cursor:pointer;display:flex;justify-content:center;align-items:center;gap:10px;background:#2EC4B6;color:#0A3440;font-weight:600;font-size:16px;padding:17px 28px;border-radius:999px;transition:transform .2s" style-hover="transform:scale(1.02)">{{ btnLabel }} <span>→</span></button>
+    <p style="grid-column:1 / -1;margin:0;font-size:13px;color:#5B7F88;text-align:center">We'll reply within one business day to pick a time. <a href="#">Privacy policy</a></p>
+  </form>
+</main>
+</sc-if>
+
+<sc-if value="{{ done }}">
+<main style="max-width:640px;margin:0 auto;padding:clamp(72px,12vw,140px) 24px;text-align:center;animation:popIn .5s ease-out both">
+  <span style="width:56px;height:56px;border-radius:50%;background:#22C55E;color:#fff;display:inline-grid;place-items:center;font-size:24px;font-weight:700">✓</span>
+  <h1 style="margin:28px 0 0;font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(34px,4.6vw,52px);line-height:1.06;letter-spacing:-0.04em">Thanks. Your audit request is in.</h1>
+  <p style="margin:18px 0 0;font-size:18px;line-height:1.6;color:#5B7F88">We'll email you within one business day to book your 20-minute call. Have your website address handy.</p>
+  <a href="Landing Page v2 B Capsules.dc.html" style="margin-top:36px;display:inline-flex;font-weight:600;padding:15px 26px;border-radius:999px;border:1px solid #CFDDE1;color:#0F4C5C">Back to the site</a>
+</main>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;brand&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Innvoket Tech&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Config&quot;},&quot;webhookUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Config&quot;}}">
+class Component extends DCLogic {
+  state = { done: false, sending: false, error: '' };
+  submit = async e => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(e.target).entries());
+    const url = this.props.webhookUrl;
+    this.setState({ sending: true, error: '' });
+    try {
+      if (url) await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+      this.setState({ done: true, sending: false });
+      window.scrollTo(0, 0);
+    } catch (err) {
+      this.setState({ sending: false, error: 'Something went wrong. Please try again or email us.' });
+    }
+  };
+  renderVals() {
+    const { done, sending, error } = this.state;
+    return {
+      brand: this.props.brand ?? 'Innvoket Tech',
+      done, notDone: !done, error,
+      btnLabel: sending ? 'Sending…' : 'Book my free audit',
+      submit: this.submit,
+      fields: [
+        { name: 'clinic', label: 'Clinic name', type: 'text', req: true, ph: '' },
+        { name: 'name', label: 'Your name', type: 'text', req: true, ph: '' },
+        { name: 'email', label: 'Email', type: 'email', req: true, ph: 'you@clinic.ca' },
+        { name: 'phone', label: 'Phone', type: 'tel', req: true, ph: '' },
+        { name: 'city', label: 'City', type: 'text', req: true, ph: 'e.g. Brampton' },
+        { name: 'website', label: 'Website', type: 'url', req: false, ph: 'https://' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

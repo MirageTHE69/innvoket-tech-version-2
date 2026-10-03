@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Physiotherapy Clinic Marketing in Canada | Innvoket Tech</title>
+<meta name="description" content="Innvoket Tech helps physio and rehab clinics in Ontario and Alberta get found on Google, answer every call and fill their schedules. Plans from $647/mo. Book a free audit.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:#F8FAFB;color:#10262D;font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:clip}
+*{box-sizing:border-box}
+a{color:#0F4C5C;text-decoration:none}
+a:hover{color:#2EC4B6}
+@keyframes wordUp{from{opacity:0;transform:translateY(0.5em)}to{opacity:1;transform:none}}
+@keyframes popIn{from{opacity:0;transform:translateY(8px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes drift1{0%,100%{transform:translate(0,0)}50%{transform:translate(16px,-14px)}}
+@keyframes drift2{0%,100%{transform:translate(0,0)}50%{transform:translate(-14px,12px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</helmet>
+
+<nav style="position:fixed;top:0;left:0;right:0;z-index:50;background:{{ navBg }};border-bottom:1px solid {{ navBorder }};transition:background .25s, border-color .25s">
+  <div style="max-width:1160px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="#top" style="display:flex;align-items:center;gap:10px;color:#10262D">
+      <span style="width:28px;height:28px;border-radius:9px;background:#0F4C5C;display:grid;place-items:center"><span style="width:10px;height:10px;border-radius:50%;background:#2EC4B6"></span></span>
+      <span style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:19px;letter-spacing:-0.03em">{{ brand }}</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:32px">
+      <sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;gap:28px;font-size:15px;font-weight:500">
+          <a href="#how" style="color:#10262D">How it works</a>
+          <a href="#plans" style="color:#10262D">Plans</a>
+          <a href="#faq" style="color:#10262D">FAQ</a>
+        </div>
+      </sc-if>
+      <a href="Audit.dc.html" style="display:inline-flex;align-items:center;gap:8px;background:#2EC4B6;color:#0A3440;font-weight:600;font-size:15px;padding:10px 20px;border-radius:999px;white-space:nowrap;transition:transform .2s" style-hover="transform:scale(1.04);color:#0A3440">Free audit <span>→</span></a>
+    </div>
+  </div>
+</nav>
+
+<header id="top" style="padding:84px clamp(8px,1.6vw,20px) clamp(40px,6vw,72px)">
+<div style="max-width:1360px;margin:0 auto;position:relative;overflow:hidden;border-radius:clamp(28px,4vw,48px);background:#E4F5F2;padding:clamp(56px,8vw,104px) 0">
+<div aria-hidden="true" style="position:absolute;pointer-events:none;right:-12%;bottom:-6%;transform:rotate(-32deg)"><div style="width:clamp(380px,42vw,600px);height:clamp(150px,17vw,240px);border-radius:999px;background:#0F4C5C;animation:drift1 16s ease-in-out infinite"></div></div><div aria-hidden="true" style="position:absolute;pointer-events:none;right:20%;top:-50px;transform:rotate(-32deg)"><div style="width:clamp(180px,18vw,260px);height:clamp(70px,7vw,96px);border-radius:999px;background:#2EC4B6;animation:drift2 20s ease-in-out infinite"></div></div><div aria-hidden="true" style="position:absolute;pointer-events:none;left:-80px;top:-20px;transform:rotate(-32deg)"><div style="width:320px;height:116px;border-radius:999px;border:2px solid rgba(15,76,92,.18);animation:drift2 20s ease-in-out infinite"></div></div><div aria-hidden="true" style="position:absolute;pointer-events:none;right:30%;bottom:-40px;transform:rotate(-32deg)"><div style="width:200px;height:70px;border-radius:999px;background:#BFEDE8;animation:drift1 16s ease-in-out infinite"></div></div><div aria-hidden="true" style="position:absolute;pointer-events:none;width:170px;height:85px;border-radius:170px 170px 0 0;background:#CDEFEB;left:6%;bottom:0"></div>
+  <div style="position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;align-items:center;gap:clamp(48px,6vw,80px)">
+    <div style="flex:1 1 440px;min-width:0">
+      <h1 style="margin:0;font-weight:inherit">
+        <span style="display:inline-flex;align-items:center;gap:8px;font-family:Inter;font-size:14px;font-weight:600;color:#0F4C5C;background:#E6F6F4;padding:7px 14px;border-radius:999px;margin-bottom:24px"><span style="width:6px;height:6px;border-radius:50%;background:#2EC4B6"></span>Physio &amp; rehab clinic marketing in Canada</span>
+        <span style="display:block;font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(40px,6.2vw,76px);line-height:1.02;letter-spacing:-0.045em;color:#10262D">
+          <span style="display:inline-block;animation:wordUp .6s cubic-bezier(.2,.7,.2,1) .10s both">More</span> <span style="position:relative;color:#0A3440;display:inline-block;animation:wordUp .6s cubic-bezier(.2,.7,.2,1) .17s both"><span style="position:absolute;inset:.06em -.16em -.02em;border-radius:999px;background:#2EC4B6;z-index:-1"></span>patients.</span> <span style="display:inline-block;animation:wordUp .6s cubic-bezier(.2,.7,.2,1) .24s both">Fuller</span> <span style="display:inline-block;animation:wordUp .6s cubic-bezier(.2,.7,.2,1) .31s both">schedules.</span> <span style="display:inline-block;animation:wordUp .6s cubic-bezier(.2,.7,.2,1) .38s both;color:#0F4C5C">A</span> <span style="display:inline-block;animation:wordUp .6s cubic-bezier(.2,.7,.2,1) .45s both;color:#0F4C5C">growing</span> <span style="display:inline-block;animation:wordUp .6s cubic-bezier(.2,.7,.2,1) .52s both;color:#0F4C5C">clinic.</span>
+        </span>
+      </h1>
+      <p data-reveal="4" style="margin:24px 0 0;font-size:clamp(17px,1.6vw,19px);line-height:1.6;color:#5B7F88;max-width:520px;text-wrap:pretty">We help independent clinics get found on Google, answer every call, and bring past patients back, so your calendar stays full.</p>
+      <div data-reveal="5" style="display:flex;flex-wrap:wrap;align-items:center;gap:20px;margin-top:36px">
+        <a href="Audit.dc.html" style="display:inline-flex;align-items:center;gap:10px;background:#2EC4B6;color:#0A3440;font-weight:600;font-size:16px;padding:17px 28px;border-radius:999px;white-space:nowrap;box-shadow:0 8px 24px rgba(46,196,182,.25);transition:transform .2s" style-hover="transform:scale(1.03);color:#0A3440">Get my free Patient Growth Audit <span>→</span></a>
+        <a href="#plans" style="display:inline-flex;align-items:center;font-weight:600;font-size:16px;padding:16px 24px;white-space:nowrap;border-radius:999px;border:1px solid #CFDDE1;color:#0F4C5C;transition:border-color .2s" style-hover="border-color:#0F4C5C;color:#0F4C5C">See plans</a>
+      </div>
+      <p data-reveal="6" style="margin:18px 0 0;font-size:14px;color:#5B7F88">20-minute call. No obligation.</p>
+    </div>
+
+    <div style="flex:1 1 420px;min-width:0;position:relative;padding:20px 8px">
+      <div style="background:#fff;border-radius:28px;border:1px solid {{ calBorder }};box-shadow:{{ calShadow }};padding:22px;transition:border-color .5s, box-shadow .5s">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+          <div>
+            <div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:16px;letter-spacing:-0.02em">This week</div>
+            <div style="font-size:12px;color:#5B7F88;margin-top:2px">Sample clinic · 3 practitioners</div>
+          </div>
+          <sc-if value="{{ booked }}" hint-placeholder-val="{{ false }}">
+            <span style="display:inline-flex;align-items:center;gap:6px;background:#E8F9EE;color:#15803D;font-size:12px;font-weight:600;padding:6px 12px;border-radius:999px;animation:popIn .4s ease-out both"><span style="width:6px;height:6px;border-radius:50%;background:#22C55E"></span>Fully booked</span>
+          </sc-if>
+          <sc-if value="{{ notBooked }}" hint-placeholder-val="{{ true }}">
+            <span style="font-size:12px;font-weight:600;color:#5B7F88;background:#F1F5F7;padding:6px 12px;border-radius:999px">{{ filledLabel }}</span>
+          </sc-if>
+        </div>
+        <div style="display:grid;grid-template-columns:38px repeat(5,minmax(0,1fr));gap:6px;font-size:11px;color:#5B7F88;font-weight:600;margin-bottom:6px">
+          <span></span><span style="text-align:center">Mon</span><span style="text-align:center">Tue</span><span style="text-align:center">Wed</span><span style="text-align:center">Thu</span><span style="text-align:center">Fri</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <sc-for list="{{ calRows }}" as="row" hint-placeholder-count="3">
+            <div style="display:grid;grid-template-columns:38px repeat(5,minmax(0,1fr));gap:6px">
+              <span style="font-size:11px;color:#5B7F88;padding-top:6px">{{ row.time }}</span>
+              <sc-for list="{{ row.cells }}" as="c" hint-placeholder-count="5">
+                <div style="height:62px;border-radius:12px;background:#F1F5F7;position:relative;overflow:hidden">
+                  <sc-if value="{{ c.filled }}">
+                    <div style="position:absolute;inset:0;background:{{ c.bg }};padding:7px 8px;display:flex;flex-direction:column;justify-content:space-between;animation:popIn .45s ease-out both">
+                      <span style="width:6px;height:6px;border-radius:50%;background:{{ c.dot }}"></span>
+                      <span style="font-size:10.5px;line-height:1.2;color:#10262D;font-weight:600">{{ c.t }}<br><span style="font-weight:400;color:#3E626B">{{ c.s }}</span></span>
+                    </div>
+                  </sc-if>
+                </div>
+              </sc-for>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <span style="position:absolute;top:0;left:-6px;background:#fff;border:1px solid #E3ECEF;border-radius:999px;padding:8px 14px;font-size:13px;font-weight:600;white-space:nowrap;box-shadow:0 8px 24px rgba(16,38,45,.08);animation:floaty 5s ease-in-out infinite">#1 nearby</span>
+      <span style="position:absolute;top:44%;right:-10px;background:#fff;border:1px solid #E3ECEF;border-radius:999px;padding:8px 14px;font-size:13px;font-weight:600;white-space:nowrap;box-shadow:0 8px 24px rgba(16,38,45,.08);animation:floaty 6s ease-in-out .8s infinite"><span style="color:#F5B300">★</span> 4.9 stars</span>
+      <span style="position:absolute;bottom:0;left:28px;display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #E3ECEF;border-radius:999px;padding:8px 14px;font-size:13px;font-weight:600;white-space:nowrap;box-shadow:0 8px 24px rgba(16,38,45,.08);animation:floaty 5.5s ease-in-out 1.6s infinite"><span style="width:7px;height:7px;border-radius:50%;background:#22C55E"></span>New booking</span>
+    </div>
+  </div>
+</div></header>
+
+<section style="padding:clamp(72px,10vw,120px) 0;position:relative;overflow:hidden">
+<div aria-hidden="true" style="position:absolute;pointer-events:none;right:-140px;top:60px;transform:rotate(-32deg)"><div style="width:460px;height:160px;border-radius:999px;background:#FFE6E6;animation:drift1 16s ease-in-out infinite"></div></div>
+  <div style="position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:0 24px">
+    <h2 data-reveal="0" style="margin:0;font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(32px,4.4vw,50px);line-height:1.08;letter-spacing:-0.035em;max-width:720px;text-wrap:balance">Every empty slot is revenue you don't get back.</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:48px">
+      <div data-reveal="1"><div style="height:100%;background:#fff;border:1px solid #E3ECEF;border-radius:28px;padding:32px;box-shadow:0 1px 2px rgba(16,38,45,.03),0 8px 24px rgba(16,38,45,.04);transition:transform .25s, box-shadow .25s" style-hover="transform:translateY(-4px);box-shadow:0 16px 40px rgba(16,38,45,.07)">
+        <div style="width:40px;height:40px;border-radius:12px;background:#FFF0F0;display:grid;place-items:center;color:#E04848;font-weight:700;font-size:14px">01</div>
+        <h3 style="margin:24px 0 8px;font-family:'Plus Jakarta Sans';font-weight:700;font-size:21px;letter-spacing:-0.02em">Missed calls</h3>
+        <p style="margin:0;color:#5B7F88;line-height:1.6">When the front desk is busy, callers book somewhere else.</p>
+      </div></div>
+      <div data-reveal="2"><div style="height:100%;background:#fff;border:1px solid #E3ECEF;border-radius:28px;padding:32px;box-shadow:0 1px 2px rgba(16,38,45,.03),0 8px 24px rgba(16,38,45,.04);transition:transform .25s, box-shadow .25s" style-hover="transform:translateY(-4px);box-shadow:0 16px 40px rgba(16,38,45,.07)">
+        <div style="width:40px;height:40px;border-radius:12px;background:#FFF0F0;display:grid;place-items:center;color:#E04848;font-weight:700;font-size:14px">02</div>
+        <h3 style="margin:24px 0 8px;font-family:'Plus Jakarta Sans';font-weight:700;font-size:21px;letter-spacing:-0.02em">Relying on referrals</h3>
+        <p style="margin:0;color:#5B7F88;line-height:1.6">Word of mouth is great until it slows down.</p>
+      </div></div>
+      <div data-reveal="3"><div style="height:100%;background:#fff;border:1px solid #E3ECEF;border-radius:28px;padding:32px;box-shadow:0 1px 2px rgba(16,38,45,.03),0 8px 24px rgba(16,38,45,.04);transition:transform .25s, box-shadow .25s" style-hover="transform:translateY(-4px);box-shadow:0 16px 40px rgba(16,38,45,.07)">
+        <div style="width:40px;height:40px;border-radius:12px;background:#FFF0F0;display:grid;place-items:center;color:#E04848;font-weight:700;font-size:14px">03</div>
+        <h3 style="margin:24px 0 8px;font-family:'Plus Jakarta Sans';font-weight:700;font-size:21px;letter-spacing:-0.02em">Invisible online</h3>
+        <p style="margin:0;color:#5B7F88;line-height:1.6">If you're not in the top results nearby, patients never see you.</p>
+      </div></div>
+    </div>
+    <div data-reveal="1" style="margin-top:20px;background:#fff;border:1px solid #E3ECEF;border-radius:28px;padding:clamp(24px,4vw,40px);display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between">
+      <div style="flex:1 1 220px">
+        <div style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:20px;letter-spacing:-0.02em">What empty slots cost a year</div>
+        <div style="font-size:14px;color:#5B7F88;margin-top:6px">Based on about $100 a visit.</div>
+      </div>
+      <div style="flex:2 1 420px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px">
+        <div style="border-radius:20px;background:#FFF6F6;padding:20px">
+          <div style="font-size:13px;color:#5B7F88">5 empty slots a week</div>
+          <div style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(22px,2.6vw,30px);letter-spacing:-0.03em;margin-top:6px;color:#C93C3C">≈ <span data-count="26000" data-prefix="$">$26,000</span></div>
+        </div>
+        <div style="border-radius:20px;background:#FFF0F0;padding:20px">
+          <div style="font-size:13px;color:#5B7F88">10 a week</div>
+          <div style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(22px,2.6vw,30px);letter-spacing:-0.03em;margin-top:6px;color:#C93C3C">≈ <span data-count="52000" data-prefix="$">$52,000</span></div>
+        </div>
+        <div style="border-radius:20px;background:#FFE8E8;padding:20px">
+          <div style="font-size:13px;color:#5B7F88">20 a week</div>
+          <div style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(22px,2.6vw,30px);letter-spacing:-0.03em;margin-top:6px;color:#C93C3C">≈ <span data-count="104000" data-prefix="$">$104,000</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" style="padding:clamp(72px,10vw,120px) 0;background:#fff;border-top:1px solid #E3ECEF;border-bottom:1px solid #E3ECEF">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <div data-reveal="0" style="font-size:14px;font-weight:600;color:#0F4C5C;margin-bottom:14px">The Patient Growth System</div>
+    <h2 data-reveal="1" style="margin:0;font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(32px,4.4vw,50px);line-height:1.08;letter-spacing:-0.035em">One system. Four steps.</h2>
+    <div style="display:flex;flex-direction:{{ hiwDir }};gap:clamp(24px,5vw,72px);margin-top:clamp(24px,4vw,56px);align-items:flex-start">
+      <div style="flex:1 1 0;width:100%;position:sticky;top:{{ stickyTop }};z-index:2;background:#fff;padding:8px 0">
+        <div style="position:relative;height:{{ visH }};border-radius:28px;background:#F4F8F9;border:1px solid #E3ECEF;overflow:hidden">
+<div aria-hidden="true" style="position:absolute;pointer-events:none;right:-110px;bottom:-30px;transform:rotate(-32deg)"><div style="width:360px;height:130px;border-radius:999px;background:#DDF3F0;animation:drift1 16s ease-in-out infinite"></div></div><div aria-hidden="true" style="position:absolute;pointer-events:none;left:-90px;top:20px;transform:rotate(-32deg)"><div style="width:260px;height:90px;border-radius:999px;border:2px solid #BFE3E0;animation:drift2 20s ease-in-out infinite"></div></div>
+
+          <div style="position:absolute;inset:0;padding:clamp(20px,3vw,36px);opacity:{{ op0 }};transition:opacity .45s;display:flex;flex-direction:column;justify-content:center">
+            <div style="background:#fff;border:1px solid #E3ECEF;border-radius:999px;padding:14px 20px;display:flex;align-items:center;gap:12px;box-shadow:0 6px 20px rgba(16,38,45,.05)">
+              <span style="width:14px;height:14px;border-radius:50%;border:2px solid #5B7F88"></span>
+              <span style="font-size:16px">{{ typed }}<span style="display:inline-block;width:2px;height:18px;background:#0F4C5C;vertical-align:-3px;margin-left:2px;animation:blink 1s infinite"></span></span>
+            </div>
+            <div style="position:relative;height:228px;margin-top:16px">
+              <sc-for list="{{ results }}" as="r" hint-placeholder-count="3">
+                <div style="position:absolute;left:0;right:0;top:{{ r.top }};height:68px;background:#fff;border:1px solid {{ r.border }};border-radius:18px;padding:12px 16px;display:flex;align-items:center;gap:14px;transition:top .7s cubic-bezier(.3,.7,.2,1), border-color .4s;box-shadow:{{ r.shadow }}">
+                  <span style="width:36px;height:36px;border-radius:10px;background:{{ r.tile }};flex:none"></span>
+                  <span style="flex:1;min-width:0">
+                    <span style="display:block;font-weight:600;font-size:15px">{{ r.name }}</span>
+                    <span style="display:block;font-size:12px;color:#5B7F88;margin-top:2px">{{ r.meta }}</span>
+                  </span>
+                  <sc-if value="{{ r.top1 }}"><span style="font-size:12px;font-weight:600;color:#0F4C5C;background:#E6F6F4;padding:5px 10px;border-radius:999px;animation:popIn .4s both">Top result</span></sc-if>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+
+          <div style="position:absolute;inset:0;padding:clamp(20px,3vw,36px);opacity:{{ op1 }};transition:opacity .45s;display:flex;flex-direction:column;justify-content:center;gap:14px">
+            <div style="background:#fff;border:1px solid #E3ECEF;border-radius:20px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between">
+              <div>
+                <div style="font-size:13px;color:#5B7F88">Your clinic · Google reviews</div>
+                <div style="display:flex;align-items:baseline;gap:10px;margin-top:4px"><span style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:32px;letter-spacing:-0.03em">4.9</span><span style="color:#F5B300;letter-spacing:2px">★★★★★</span></div>
+              </div>
+              <div style="text-align:right">
+                <div style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:32px;letter-spacing:-0.03em;color:#0F4C5C">{{ reviewCount }}</div>
+                <div style="font-size:13px;color:#5B7F88">reviews</div>
+              </div>
+            </div>
+            <sc-for list="{{ reviews }}" as="rv" hint-placeholder-count="2">
+              <div style="background:#fff;border:1px solid #E3ECEF;border-radius:16px;padding:14px 16px;display:flex;gap:12px;align-items:center;animation:popIn .45s ease-out both">
+                <span style="width:30px;height:30px;border-radius:50%;background:{{ rv.c }};flex:none"></span>
+                <span style="flex:1">
+                  <span style="color:#F5B300;font-size:13px;letter-spacing:1px">★★★★★</span>
+                  <span style="display:block;height:7px;border-radius:4px;background:#E9F0F2;margin-top:6px;width:{{ rv.w }}"></span>
+                </span>
+                <span style="font-size:11px;color:#5B7F88">just now</span>
+              </div>
+            </sc-for>
+          </div>
+
+          <div style="position:absolute;inset:0;padding:clamp(20px,3vw,36px);opacity:{{ op2 }};transition:opacity .45s;display:flex;flex-direction:column;justify-content:center;gap:12px">
+            <div style="background:#fff;border:1px solid #E3ECEF;border-radius:18px;padding:14px 16px;display:flex;align-items:center;gap:12px">
+              <span style="width:36px;height:36px;border-radius:50%;background:#F1F5F7;display:grid;place-items:center;font-size:16px;color:#5B7F88">↙</span>
+              <span style="flex:1"><span style="display:block;font-weight:600;font-size:14px">Missed call</span><span style="display:block;font-size:12px;color:#5B7F88">(555) 010-0000 · 2:14 pm</span></span>
+            </div>
+            <sc-if value="{{ s3a }}"><div style="align-self:flex-end;max-width:82%;background:#0F4C5C;color:#fff;border-radius:18px 18px 4px 18px;padding:12px 16px;font-size:14px;line-height:1.45;animation:popIn .4s both">Sorry we missed you! Book your visit here: <span style="color:#7FE3D9;text-decoration:underline">yourclinic.ca/book</span></div></sc-if>
+            <sc-if value="{{ s3b }}"><div style="align-self:flex-start;max-width:70%;background:#fff;border:1px solid #E3ECEF;border-radius:18px 18px 18px 4px;padding:12px 16px;font-size:14px;animation:popIn .4s both">Thanks, just booked for Thursday.</div></sc-if>
+            <sc-if value="{{ s3c }}"><div style="background:#E8F9EE;border:1px solid #BDEBCB;border-radius:18px;padding:14px 16px;display:flex;align-items:center;gap:12px;animation:popIn .4s both">
+              <span style="width:28px;height:28px;border-radius:50%;background:#22C55E;color:#fff;display:grid;place-items:center;font-size:14px;font-weight:700">✓</span>
+              <span><span style="display:block;font-weight:600;font-size:14px;color:#14532D">Booked</span><span style="display:block;font-size:12px;color:#3F6B4E">New patient · Thu 10:30 am</span></span>
+            </div></sc-if>
+          </div>
+
+          <div style="position:absolute;inset:0;padding:clamp(20px,3vw,36px);opacity:{{ op3 }};transition:opacity .45s;display:flex;flex-direction:column;justify-content:center;gap:10px">
+            <div style="font-size:13px;color:#5B7F88;margin-bottom:4px">Patients not seen in 6+ months</div>
+            <sc-for list="{{ patients }}" as="p" hint-placeholder-count="4">
+              <div style="background:#fff;border:1px solid #E3ECEF;border-radius:16px;padding:12px 16px;display:flex;align-items:center;gap:12px">
+                <span style="width:32px;height:32px;border-radius:50%;background:#E7EFF1;display:grid;place-items:center;font-size:12px;font-weight:600;color:#0F4C5C">{{ p.i }}</span>
+                <span style="flex:1"><span style="display:block;font-weight:600;font-size:14px">{{ p.name }}</span><span style="display:block;font-size:12px;color:#5B7F88">{{ p.last }}</span></span>
+                <span style="font-size:12px;font-weight:600;padding:5px 11px;border-radius:999px;background:{{ p.bg }};color:{{ p.fg }};transition:background .4s, color .4s">{{ p.label }}</span>
+              </div>
+            </sc-for>
+          </div>
+
+        </div>
+      </div>
+      <div style="flex:1 1 0;width:100%">
+        <div data-step="0" style="min-height:{{ stepH }};display:flex;flex-direction:column;justify-content:center;opacity:{{ so0 }};transition:opacity .4s">
+          <div style="font-size:14px;font-weight:600;color:#2A9D92">Step 1</div>
+          <h3 style="margin:10px 0 12px;font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(26px,3vw,36px);letter-spacing:-0.03em">Get found</h3>
+          <p style="margin:0;font-size:18px;line-height:1.6;color:#5B7F88;max-width:440px">We set up your Google profile and website so you show up when people nearby search for care.</p>
+        </div>
+        <div data-step="1" style="min-height:{{ stepH }};display:flex;flex-direction:column;justify-content:center;opacity:{{ so1 }};transition:opacity .4s">
+          <div style="font-size:14px;font-weight:600;color:#2A9D92">Step 2</div>
+          <h3 style="margin:10px 0 12px;font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(26px,3vw,36px);letter-spacing:-0.03em">Get chosen</h3>
+          <p style="margin:0;font-size:18px;line-height:1.6;color:#5B7F88;max-width:440px">Automatic review requests build the rating patients check before they call.</p>
+        </div>
+        <div data-step="2" style="min-height:{{ stepH }};display:flex;flex-direction:column;justify-content:center;opacity:{{ so2 }};transition:opacity .4s">
+          <div style="font-size:14px;font-weight:600;color:#2A9D92">Step 3</div>
+          <h3 style="margin:10px 0 12px;font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(26px,3vw,36px);letter-spacing:-0.03em">Get booked</h3>
+          <p style="margin:0;font-size:18px;line-height:1.6;color:#5B7F88;max-width:440px">Missed calls get an instant text with your booking link, so callers don't go elsewhere.</p>
+        </div>
+        <div data-step="3" style="min-height:{{ stepH }};display:flex;flex-direction:column;justify-content:center;opacity:{{ so3 }};transition:opacity .4s">
+          <div style="font-size:14px;font-weight:600;color:#2A9D92">Step 4</div>
+          <h3 style="margin:10px 0 12px;font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(26px,3vw,36px);letter-spacing:-0.03em">Keep them coming back</h3>
+          <p style="margin:0;font-size:18px;line-height:1.6;color:#5B7F88;max-width:440px">Friendly recall messages bring past patients back for the care they still need.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:clamp(72px,10vw,120px) 0">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <div data-reveal="0" style="font-size:14px;font-weight:600;color:#0F4C5C;margin-bottom:14px">What you see every month</div>
+    <h2 data-reveal="1" style="margin:0;font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(32px,4.4vw,50px);line-height:1.08;letter-spacing:-0.035em;max-width:760px;text-wrap:balance">You'll always know what your investment brings in.</h2>
+    <div data-reveal="2" style="margin-top:48px;background:#fff;border:1px solid #E3ECEF;border-radius:32px;box-shadow:0 1px 2px rgba(16,38,45,.03),0 20px 48px rgba(16,38,45,.05);overflow:hidden">
+      <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:20px clamp(20px,3vw,32px);border-bottom:1px solid #E3ECEF">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:17px">Monthly report</span>
+          <span style="font-size:12px;font-weight:600;color:#0F4C5C;background:#E6F6F4;padding:5px 10px;border-radius:999px">Sample report</span>
+        </div>
+        <span style="font-size:13px;color:#5B7F88">Sample clinic · illustrative figures</span>
+      </div>
+      <div style="padding:clamp(20px,3vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px">
+        <div style="border:1px solid #E3ECEF;border-radius:20px;padding:18px"><div style="font-size:13px;color:#5B7F88">New patient inquiries</div><div style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:32px;letter-spacing:-0.03em;margin-top:8px" data-count="64">64</div></div>
+        <div style="border:1px solid #E3ECEF;border-radius:20px;padding:18px"><div style="font-size:13px;color:#5B7F88">Bookings</div><div style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:32px;letter-spacing:-0.03em;margin-top:8px" data-count="41">41</div></div>
+        <div style="border:1px solid #E3ECEF;border-radius:20px;padding:18px"><div style="font-size:13px;color:#5B7F88">Cost per new patient</div><div style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:32px;letter-spacing:-0.03em;margin-top:8px" data-count="38" data-prefix="$">$38</div></div>
+        <div style="border:1px solid #E3ECEF;border-radius:20px;padding:18px"><div style="font-size:13px;color:#5B7F88">New reviews</div><div style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:32px;letter-spacing:-0.03em;margin-top:8px" data-count="14">14</div></div>
+        <div style="border:1px solid #E3ECEF;border-radius:20px;padding:18px"><div style="font-size:13px;color:#5B7F88">Patients brought back</div><div style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:32px;letter-spacing:-0.03em;margin-top:8px" data-count="11">11</div></div>
+      </div>
+      <div style="padding:0 clamp(20px,3vw,32px) clamp(20px,3vw,32px)">
+        <div style="border:1px solid #E3ECEF;border-radius:20px;padding:20px">
+          <div style="display:flex;justify-content:space-between;font-size:13px;color:#5B7F88;margin-bottom:16px"><span style="font-weight:600;color:#10262D">Bookings by week</span><span>Last 12 weeks</span></div>
+          <div style="height:140px;display:flex;align-items:flex-end;gap:clamp(4px,1vw,12px)">
+            <sc-for list="{{ bars }}" as="b" hint-placeholder-count="12">
+              <div style="flex:1;height:{{ b.h }};border-radius:8px 8px 4px 4px;background:{{ b.c }}"></div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="plans" style="padding:clamp(72px,10vw,120px) 0;background:#fff;border-top:1px solid #E3ECEF;border-bottom:1px solid #E3ECEF;position:relative;overflow:hidden">
+<div aria-hidden="true" style="position:absolute;pointer-events:none;left:calc(50% - 420px);top:30%;transform:rotate(-32deg)"><div style="width:840px;height:300px;border-radius:999px;background:#EEF8F7;animation:drift1 16s ease-in-out infinite"></div></div><div aria-hidden="true" style="position:absolute;pointer-events:none;left:4%;top:80px;transform:rotate(-32deg)"><div style="width:130px;height:46px;border-radius:999px;background:#0F4C5C;animation:drift2 20s ease-in-out infinite"></div></div><div aria-hidden="true" style="position:absolute;pointer-events:none;right:6%;top:130px;transform:rotate(-32deg)"><div style="width:90px;height:34px;border-radius:999px;background:#2EC4B6;animation:drift1 16s ease-in-out infinite"></div></div>
+  <div style="position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:0 24px">
+    <div style="text-align:center">
+      <h2 data-reveal="0" style="margin:0;font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(32px,4.4vw,50px);line-height:1.08;letter-spacing:-0.035em">Simple plans. No long lock-in.</h2>
+      <p data-reveal="1" style="margin:16px auto 0;color:#5B7F88;font-size:17px;max-width:560px">Prices in CAD per month. Your ad budget is paid separately, directly to the ad platforms.</p>
+    </div>
+    <sc-if value="{{ showFounding }}" hint-placeholder-val="{{ true }}">
+      <div data-reveal="2" style="margin:36px auto 0;max-width:640px;display:flex;align-items:center;justify-content:center;gap:12px;background:#E6F6F4;border:1px solid #BFE9E4;border-radius:999px;padding:12px 20px;font-size:15px;font-weight:500;color:#0F4C5C;text-align:center">
+        <span style="width:8px;height:8px;border-radius:50%;background:#2EC4B6;flex:none"></span>Founding clinics: setup fee waived for our first 5 clinics.
+      </div>
+    </sc-if>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px;margin-top:40px;align-items:stretch">
+      <div data-reveal="1"><div style="height:100%;display:flex;flex-direction:column;background:#fff;border:1px solid #E3ECEF;border-radius:30px;padding:32px;box-shadow:0 1px 2px rgba(16,38,45,.03),0 8px 24px rgba(16,38,45,.04);transition:transform .25s, box-shadow .25s" style-hover="transform:translateY(-4px);box-shadow:0 16px 40px rgba(16,38,45,.07)">
+        <h3 style="margin:0;font-family:'Plus Jakarta Sans';font-weight:700;font-size:22px;letter-spacing:-0.02em">Get Found</h3>
+        <p style="margin:8px 0 0;color:#5B7F88;font-size:15px">Be seen. Stop missing patients.</p>
+        <div style="margin-top:24px;display:flex;align-items:baseline;gap:4px"><span style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:44px;letter-spacing:-0.04em">$647</span><span style="color:#5B7F88">/mo</span></div>
+        <div style="font-size:14px;color:#5B7F88;margin-top:4px">Setup $597</div>
+        <div style="height:1px;background:#E3ECEF;margin:24px 0"></div>
+        <div style="display:flex;flex-direction:column;gap:12px;flex:1">
+          <sc-for list="{{ f1 }}" as="f" hint-placeholder-count="6"><div style="display:flex;gap:10px;font-size:15px;line-height:1.45"><span style="width:20px;height:20px;border-radius:50%;background:#E6F6F4;color:#0F4C5C;display:grid;place-items:center;font-size:11px;font-weight:700;flex:none;margin-top:1px">✓</span>{{ f }}</div></sc-for>
+        </div>
+        <a href="Audit.dc.html" style="margin-top:28px;display:flex;justify-content:center;font-weight:600;padding:15px 20px;white-space:nowrap;border-radius:999px;border:1px solid #CFDDE1;color:#0F4C5C;transition:border-color .2s" style-hover="border-color:#0F4C5C;color:#0F4C5C">Start with a free audit</a>
+      </div></div>
+      <div data-reveal="2"><div style="height:100%;display:flex;flex-direction:column;background:#fff;border:2px solid #0F4C5C;border-radius:30px;padding:31px;box-shadow:0 24px 56px rgba(15,76,92,.12);position:relative;transition:transform .25s, box-shadow .25s" style-hover="transform:translateY(-4px);box-shadow:0 28px 64px rgba(15,76,92,.16)">
+        <span style="position:absolute;top:-14px;left:31px;background:#2EC4B6;color:#0A3440;font-size:12px;font-weight:700;padding:6px 12px;border-radius:999px">Most popular</span>
+        <h3 style="margin:0;font-family:'Plus Jakarta Sans';font-weight:700;font-size:22px;letter-spacing:-0.02em">Fill Your Schedule</h3>
+        <p style="margin:8px 0 0;color:#5B7F88;font-size:15px">Steady new patients every month.</p>
+        <div style="margin-top:24px;display:flex;align-items:baseline;gap:4px"><span style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:44px;letter-spacing:-0.04em;color:#0F4C5C">$1,197</span><span style="color:#5B7F88">/mo</span></div>
+        <div style="font-size:14px;color:#5B7F88;margin-top:4px">Setup $797</div>
+        <div style="height:1px;background:#E3ECEF;margin:24px 0"></div>
+        <div style="font-size:14px;font-weight:600;margin-bottom:12px">Everything in Get Found, plus:</div>
+        <div style="display:flex;flex-direction:column;gap:12px;flex:1">
+          <sc-for list="{{ f2 }}" as="f" hint-placeholder-count="5"><div style="display:flex;gap:10px;font-size:15px;line-height:1.45"><span style="width:20px;height:20px;border-radius:50%;background:#2EC4B6;color:#0A3440;display:grid;place-items:center;font-size:11px;font-weight:700;flex:none;margin-top:1px">✓</span>{{ f }}</div></sc-for>
+        </div>
+        <a href="Audit.dc.html" style="margin-top:28px;display:flex;justify-content:center;align-items:center;gap:8px;font-weight:600;padding:15px 20px;white-space:nowrap;border-radius:999px;background:#2EC4B6;color:#0A3440;transition:transform .2s" style-hover="transform:scale(1.03);color:#0A3440">Start with a free audit <span>→</span></a>
+      </div></div>
+      <div data-reveal="3"><div style="height:100%;display:flex;flex-direction:column;background:#fff;border:1px solid #E3ECEF;border-radius:30px;padding:32px;box-shadow:0 1px 2px rgba(16,38,45,.03),0 8px 24px rgba(16,38,45,.04);transition:transform .25s, box-shadow .25s" style-hover="transform:translateY(-4px);box-shadow:0 16px 40px rgba(16,38,45,.07)">
+        <h3 style="margin:0;font-family:'Plus Jakarta Sans';font-weight:700;font-size:22px;letter-spacing:-0.02em">Own Your Area</h3>
+        <p style="margin:8px 0 0;color:#5B7F88;font-size:15px">Become the #1 clinic nearby.</p>
+        <div style="margin-top:24px;display:flex;align-items:baseline;gap:4px"><span style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:44px;letter-spacing:-0.04em">$2,197</span><span style="color:#5B7F88">/mo</span></div>
+        <div style="font-size:14px;color:#5B7F88;margin-top:4px">Setup $997</div>
+        <div style="height:1px;background:#E3ECEF;margin:24px 0"></div>
+        <div style="font-size:14px;font-weight:600;margin-bottom:12px">Everything in Fill Your Schedule, plus:</div>
+        <div style="display:flex;flex-direction:column;gap:12px;flex:1">
+          <sc-for list="{{ f3 }}" as="f" hint-placeholder-count="5"><div style="display:flex;gap:10px;font-size:15px;line-height:1.45"><span style="width:20px;height:20px;border-radius:50%;background:#E6F6F4;color:#0F4C5C;display:grid;place-items:center;font-size:11px;font-weight:700;flex:none;margin-top:1px">✓</span>{{ f }}</div></sc-for>
+        </div>
+        <a href="Audit.dc.html" style="margin-top:28px;display:flex;justify-content:center;font-weight:600;padding:15px 20px;white-space:nowrap;border-radius:999px;border:1px solid #CFDDE1;color:#0F4C5C;transition:border-color .2s" style-hover="border-color:#0F4C5C;color:#0F4C5C">Start with a free audit</a>
+      </div></div>
+    </div>
+    <p data-reveal="0" style="margin:32px 0 0;text-align:center;color:#5B7F88;font-size:15px">3-month start, then month-to-month. You own your website, accounts and data.</p>
+  </div>
+</section>
+
+<section style="padding:clamp(72px,10vw,120px) 0">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;gap:clamp(32px,5vw,72px);align-items:center">
+    <div style="flex:1 1 380px">
+      <div data-reveal="0" style="font-size:14px;font-weight:600;color:#0F4C5C;margin-bottom:14px">The math</div>
+      <h2 data-reveal="1" style="margin:0;font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(32px,4.4vw,50px);line-height:1.08;letter-spacing:-0.035em;text-wrap:balance">Two new patients a month covers the plan.</h2>
+      <p data-reveal="2" style="margin:20px 0 0;font-size:14px;color:#5B7F88">Illustrative. Results vary by clinic and market.</p>
+    </div>
+    <div data-reveal="2" style="flex:1 1 440px;background:#fff;border:1px solid #E3ECEF;border-radius:30px;padding:clamp(24px,3.5vw,40px);box-shadow:0 1px 2px rgba(16,38,45,.03),0 8px 24px rgba(16,38,45,.04)">
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;text-align:center">
+        <div style="background:#F4F8F9;border-radius:18px;padding:16px 8px"><div style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:28px;letter-spacing:-0.03em">2</div><div style="font-size:13px;color:#5B7F88;margin-top:2px">new patients</div></div>
+        <div style="background:#F4F8F9;border-radius:18px;padding:16px 8px"><div style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:28px;letter-spacing:-0.03em">× ~7</div><div style="font-size:13px;color:#5B7F88;margin-top:2px">visits each</div></div>
+        <div style="background:#F4F8F9;border-radius:18px;padding:16px 8px"><div style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:28px;letter-spacing:-0.03em">× ~$110</div><div style="font-size:13px;color:#5B7F88;margin-top:2px">per visit</div></div>
+      </div>
+      <div style="margin-top:28px;display:flex;flex-direction:column;gap:16px">
+        <div>
+          <div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:8px"><span style="font-weight:600">Revenue from 2 new patients</span><span style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:18px;color:#15803D">≈ <span data-count="1540" data-prefix="$">$1,540</span></span></div>
+          <div style="height:14px;border-radius:999px;background:#F1F5F7"><div style="height:100%;width:100%;border-radius:999px;background:#22C55E"></div></div>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;font-size:14px;margin-bottom:8px"><span style="font-weight:600">Fill Your Schedule plan</span><span style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:18px;color:#0F4C5C">$1,197/mo</span></div>
+          <div style="height:14px;border-radius:999px;background:#F1F5F7"><div style="height:100%;width:78%;border-radius:999px;background:#0F4C5C"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0 0 clamp(72px,10vw,120px)">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <h2 data-reveal="0" style="margin:0;font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(32px,4.4vw,50px);line-height:1.08;letter-spacing:-0.035em">Your first 90 days</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:48px">
+      <div data-reveal="1" style="border-top:2px solid #0F4C5C;padding-top:24px">
+        <div style="font-size:14px;font-weight:600;color:#2A9D92">Month 1</div>
+        <h3 style="margin:8px 0 10px;font-family:'Plus Jakarta Sans';font-weight:700;font-size:24px;letter-spacing:-0.02em">Foundation</h3>
+        <p style="margin:0;color:#5B7F88;line-height:1.6">Your Google profile, website, review requests and tracking get set up.</p>
+      </div>
+      <div data-reveal="2" style="border-top:2px solid #2EC4B6;padding-top:24px">
+        <div style="font-size:14px;font-weight:600;color:#2A9D92">Month 2</div>
+        <h3 style="margin:8px 0 10px;font-family:'Plus Jakarta Sans';font-weight:700;font-size:24px;letter-spacing:-0.02em">Launch</h3>
+        <p style="margin:0;color:#5B7F88;line-height:1.6">Campaigns and condition pages go live.</p>
+      </div>
+      <div data-reveal="3" style="border-top:2px solid #22C55E;padding-top:24px">
+        <div style="font-size:14px;font-weight:600;color:#2A9D92">Month 3</div>
+        <h3 style="margin:8px 0 10px;font-family:'Plus Jakarta Sans';font-weight:700;font-size:24px;letter-spacing:-0.02em">Grow</h3>
+        <p style="margin:0;color:#5B7F88;line-height:1.6">We put more into what's bringing patients in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:clamp(72px,10vw,120px) 0;background:#fff;border-top:1px solid #E3ECEF;border-bottom:1px solid #E3ECEF">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <h2 data-reveal="0" style="margin:0;font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(32px,4.4vw,50px);line-height:1.08;letter-spacing:-0.035em">Why clinics choose us</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:32px 24px;margin-top:48px">
+      <sc-for list="{{ why }}" as="w" hint-placeholder-count="5">
+        <div data-reveal="1">
+          <div style="width:36px;height:36px;border-radius:11px;background:#E6F6F4;display:grid;place-items:center;font-family:'Plus Jakarta Sans';font-weight:800;font-size:14px;color:#0F4C5C">{{ w.n }}</div>
+          <h3 style="margin:18px 0 8px;font-family:'Plus Jakarta Sans';font-weight:700;font-size:18px;letter-spacing:-0.02em">{{ w.t }}</h3>
+          <p style="margin:0;color:#5B7F88;line-height:1.55;font-size:15px">{{ w.d }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding:clamp(72px,10vw,120px) 0">
+  <div style="max-width:820px;margin:0 auto;padding:0 24px">
+    <h2 data-reveal="0" style="margin:0;font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(32px,4.4vw,50px);line-height:1.08;letter-spacing:-0.035em;text-align:center">Questions clinic owners ask</h2>
+    <div style="margin-top:48px;display:flex;flex-direction:column;gap:12px">
+      <sc-for list="{{ faqs }}" as="q" hint-placeholder-count="8">
+        <div style="background:#fff;border:1px solid #E3ECEF;border-radius:24px;overflow:hidden">
+          <button onClick="{{ q.toggle }}" aria-expanded="{{ q.open }}" style="all:unset;box-sizing:border-box;width:100%;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 26px;font-family:'Plus Jakarta Sans';font-weight:700;font-size:17px;letter-spacing:-0.01em;color:#10262D">
+            <span>{{ q.q }}</span>
+            <span style="width:28px;height:28px;border-radius:50%;background:#F1F5F7;display:grid;place-items:center;flex:none;font-size:18px;font-weight:500;color:#0F4C5C;transform:{{ q.rot }};transition:transform .25s">+</span>
+          </button>
+          <sc-if value="{{ q.open }}">
+            <p style="margin:0;padding:0 26px 24px;color:#5B7F88;line-height:1.65;animation:popIn .3s ease-out both">{{ q.a }}</p>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section style="background:#0F4C5C;padding:clamp(72px,10vw,120px) 0;position:relative;overflow:hidden">
+<div aria-hidden="true" style="position:absolute;pointer-events:none;right:-120px;top:-40px;transform:rotate(-32deg)"><div style="width:420px;height:140px;border-radius:999px;background:#2EC4B6;animation:drift2 20s ease-in-out infinite"></div></div><div aria-hidden="true" style="position:absolute;pointer-events:none;left:-160px;bottom:-40px;transform:rotate(-32deg)"><div style="width:520px;height:180px;border-radius:999px;background:#14596B;animation:drift1 16s ease-in-out infinite"></div></div><div aria-hidden="true" style="position:absolute;pointer-events:none;left:10%;top:30px;transform:rotate(-32deg)"><div style="width:180px;height:64px;border-radius:999px;border:2px solid rgba(46,196,182,.5);animation:drift2 20s ease-in-out infinite"></div></div>
+  <div style="position:relative;z-index:1;max-width:760px;margin:0 auto;padding:0 24px;text-align:center">
+    <h2 data-reveal="0" style="margin:0;font-family:'Plus Jakarta Sans';font-weight:800;font-size:clamp(32px,4.6vw,54px);line-height:1.06;letter-spacing:-0.035em;color:#fff;text-wrap:balance">See how many patients your clinic is <span style="position:relative;display:inline-block;z-index:0;color:#0A3440;"><span style="position:absolute;inset:.06em -.16em -.02em;border-radius:999px;background:#2EC4B6;z-index:-1;opacity:1"></span>missing.</span></h2>
+    <p data-reveal="1" style="margin:20px auto 0;color:#CFE4E8;font-size:18px;line-height:1.6;max-width:580px">In 20 minutes we'll show you where you stand against the top clinics near you, and a 90-day plan to fill your schedule.</p>
+    <div data-reveal="2" style="margin-top:36px"><a href="Audit.dc.html" style="display:inline-flex;align-items:center;gap:10px;background:#2EC4B6;color:#0A3440;font-weight:600;font-size:17px;padding:18px 32px;border-radius:999px;transition:transform .2s" style-hover="transform:scale(1.03);color:#0A3440">Book my free audit <span>→</span></a></div>
+  </div>
+</section>
+
+<footer style="padding:64px 0 40px;background:#F8FAFB">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px;display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between">
+    <div style="flex:1 1 280px;max-width:360px">
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="width:28px;height:28px;border-radius:9px;background:#0F4C5C;display:grid;place-items:center"><span style="width:10px;height:10px;border-radius:50%;background:#2EC4B6"></span></span>
+        <span style="font-family:'Plus Jakarta Sans';font-weight:800;font-size:19px;letter-spacing:-0.03em">{{ brand }}</span>
+      </div>
+      <p style="margin:16px 0 0;color:#5B7F88;line-height:1.6;font-size:15px">Patient growth for physiotherapy, chiropractic, massage and rehab clinics in Canada.</p>
+      <p style="margin:12px 0 0;color:#5B7F88;font-size:14px">Serving clinics across Ontario and Alberta</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:56px;font-size:15px">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-weight:600">Site</span>
+        <a href="#how" style="color:#5B7F88">How it works</a>
+        <a href="#plans" style="color:#5B7F88">Plans</a>
+        <a href="#faq" style="color:#5B7F88">FAQ</a>
+        <a href="Audit.dc.html" style="color:#5B7F88">Free audit</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-weight:600">Contact</span>
+        <a href="mailto:hello@innvoket.tech" style="color:#5B7F88">hello@innvoket.tech</a>
+        <span style="color:#5B7F88">+1 (000) 000-0000</span>
+      </div>
+    </div>
+  </div>
+  <div style="max-width:1160px;margin:48px auto 0;padding:24px 24px 0;border-top:1px solid #E3ECEF;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:13px;color:#5B7F88">
+    <span>© 2026 {{ brand }}</span>
+    <a href="#" style="color:#5B7F88">Privacy policy</a>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;brand&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Innvoket Tech&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Config&quot;},&quot;showFoundingOffer&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Config&quot;},&quot;reduceMotion&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motion&quot;}}">
+class Component extends DCLogic {
+  state = { tick: 0, st: 0, active: 0, scrolled: false, narrow: false, openFaq: 0 };
+  componentDidMount() {
+    this.reduce = !!this.props.reduceMotion || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+    this.onResize = () => { const n = window.innerWidth < 900; if (n !== this.state.narrow) this.setState({ narrow: n }); };
+    this.onScroll = () => { const s = (window.scrollY || document.documentElement.scrollTop) > 8; if (s !== this.state.scrolled) this.setState({ scrolled: s }); };
+    window.addEventListener('resize', this.onResize);
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    this.onResize(); this.onScroll();
+    if (!this.reduce) {
+      this.i1 = setInterval(() => this.setState(s => ({ tick: s.tick + 1 })), 420);
+      this.i2 = setInterval(() => this.setState(s => ({ st: s.st + 1 })), 650);
+    }
+    this.to = setTimeout(() => { this.setupReveal(); this.setupSteps(); this.setupCount(); }, 80);
+  }
+  componentWillUnmount() {
+    clearInterval(this.i1); clearInterval(this.i2); clearTimeout(this.to);
+    window.removeEventListener('resize', this.onResize); window.removeEventListener('scroll', this.onScroll);
+    [this.ro, this.so, this.co].forEach(o => o && o.disconnect());
+  }
+  setupReveal() {
+    if (this.reduce) return;
+    this.ro = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target, d = el.__d;
+      el.style.opacity = '1'; el.style.transform = 'none';
+      this.ro.unobserve(el);
+      setTimeout(() => { el.style.transition = el.__o.t; el.style.transform = el.__o.tr; el.style.opacity = el.__o.o; }, 560 + d);
+    }), { rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('[data-reveal]').forEach(el => {
+      if (el.__rv) return; el.__rv = 1;
+      el.__o = { t: el.style.transition, tr: el.style.transform, o: el.style.opacity };
+      el.__d = (+el.dataset.reveal || 0) * 60;
+      el.style.opacity = '0'; el.style.transform = 'translateY(16px)';
+      el.style.transition = `opacity .5s ease-out ${el.__d}ms, transform .5s ease-out ${el.__d}ms`;
+      this.ro.observe(el);
+    });
+  }
+  setupSteps() {
+    this.so = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) this.setState({ active: +e.target.dataset.step }); }), { rootMargin: '-50% 0px -40% 0px' });
+    document.querySelectorAll('[data-step]').forEach(el => this.so.observe(el));
+  }
+  setupCount() {
+    if (this.reduce) return;
+    const fmt = (el, v) => { el.textContent = (el.dataset.prefix || '') + Math.round(v).toLocaleString('en-CA'); };
+    this.co = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target, target = +el.dataset.count, t0 = performance.now();
+      this.co.unobserve(el);
+      const step = now => { const p = Math.min((now - t0) / 1200, 1); fmt(el, target * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step); };
+      requestAnimationFrame(step);
+    }), { threshold: 0.6 });
+    document.querySelectorAll('[data-count]').forEach(el => { fmt(el, 0); this.co.observe(el); });
+  }
+  renderVals() {
+    const { tick, st, active, scrolled, narrow, openFaq } = this.state;
+    const reduce = this.reduce;
+    const ph = (n, full) => reduce ? full : st % n;
+    // hero calendar
+    const types = [
+      { t: 'New patient', s: 'Back pain', bg: '#E6F6F4', dot: '#2EC4B6' },
+      { t: 'MVA', s: 'assessment', bg: '#E7EFF1', dot: '#0F4C5C' },
+      { t: 'Sports', s: 'injury', bg: '#EEF6E9', dot: '#22C55E' },
+      { t: 'Returning', s: 'patient', bg: '#F1F1FA', dot: '#7C83C9' }
+    ];
+    const order = [6, 1, 12, 3, 9, 0, 14, 7, 4, 11, 2, 13, 8, 5, 10];
+    const cp = reduce ? 15 : tick % 26;
+    const filled = Math.min(cp, 15);
+    const isFilled = new Set(order.slice(0, filled));
+    const times = ['9:00', '11:30', '3:00'];
+    const calRows = times.map((time, r) => ({ time, cells: [0, 1, 2, 3, 4].map(c => { const i = r * 5 + c, ty = types[(i * 7) % 4]; return { filled: isFilled.has(i), ...ty }; }) }));
+    const booked = cp >= 15;
+    // step 1
+    const q = 'physio near me', p1 = ph(26, 20);
+    const risen = p1 >= 17;
+    const base = [
+      { name: 'Your Clinic', meta: 'Physiotherapy · 0.8 km · Open now', you: true, rank: risen ? 0 : 2 },
+      { name: 'Northside Physio', meta: 'Physiotherapy · 2.1 km', rank: risen ? 1 : 0 },
+      { name: 'City Rehab Centre', meta: 'Rehabilitation · 3.4 km', rank: risen ? 2 : 1 }
+    ];
+    const results = base.map(r => ({ ...r, top: r.rank * 80 + 'px', top1: r.you && risen, border: r.you && risen ? '#2EC4B6' : '#E3ECEF', shadow: r.you && risen ? '0 10px 28px rgba(46,196,182,.18)' : 'none', tile: r.you ? '#0F4C5C' : '#E3ECEF' }));
+    // step 2
+    const p2 = ph(20, 19);
+    const rc = ['#CDEDEA', '#D6E4E8', '#DDEFD6', '#E2E3F4'], rw = ['72%', '58%', '80%', '64%'];
+    const reviews = [0, 1, 2].slice(0, Math.min(Math.floor(p2 / 4), 3)).map(i => ({ c: rc[i], w: rw[i] }));
+    // step 3
+    const p3 = ph(12, 11);
+    // step 4
+    const p4 = ph(14, 13);
+    const rebooked = Math.max(0, Math.min(4, Math.floor((p4 - 2) / 2)));
+    const patients = [
+      { i: 'A', name: 'Patient A', last: 'Last visit 7 months ago' },
+      { i: 'B', name: 'Patient B', last: 'Last visit 9 months ago' },
+      { i: 'C', name: 'Patient C', last: 'Last visit 6 months ago' },
+      { i: 'D', name: 'Patient D', last: 'Last visit 11 months ago' }
+    ].map((p, k) => { const on = k < rebooked; return { ...p, label: on ? 'Rebooked' : 'Inactive', bg: on ? '#E8F9EE' : '#F1F5F7', fg: on ? '#15803D' : '#5B7F88' }; });
+    const faqData = [
+      ['How soon will I see results?', 'Most clinics see more calls and reviews within the first two months, once the foundations are live. Ads can bring inquiries sooner; search rankings usually take several months. We will give you a realistic timeline for your area on the audit call.'],
+      ['Do I have to sign a long contract?', 'No. Plans start with a 3-month term so the work has time to take effect, then continue month-to-month.'],
+      ['How much should I spend on ads?', 'It depends on your city and services. Most clinics start with a modest budget and adjust once they can see their cost per new patient. We suggest a starting range on the audit call. Your ad budget goes directly to the ad platforms, not to us.'],
+      ['Does this work with my booking software?', 'Yes. We add your existing online booking link, such as Jane, to everything we build, and set up tracking so you can see which bookings came from where.'],
+      ['Who owns the website and accounts?', 'You do. Your website, domain, Google Business Profile, ad accounts and data stay in your name. If you leave, everything stays with you.'],
+      ['Is my patient data safe?', 'We do not need access to clinical records. We track inquiries and bookings, not health information, and we follow Canadian privacy law, including PIPEDA and applicable provincial rules.'],
+      ['Do you work with clinics outside Ontario and Alberta?', 'Ontario and Alberta are our focus because we know those markets best. If your clinic is elsewhere in Canada, book an audit and we will tell you honestly whether we are a good fit.'],
+      ['What happens on the free audit call?', 'In about 20 minutes we review your Google presence, website, reviews and how calls are handled, compare you with the top clinics near you, and share a 90-day plan. There is no obligation to sign up.']
+    ];
+    const faqs = faqData.map(([qq, a], i) => ({ q: qq, a, open: openFaq === i, rot: openFaq === i ? 'rotate(45deg)' : 'none', toggle: () => this.setState({ openFaq: openFaq === i ? -1 : i }) }));
+    const barH = [34, 40, 38, 47, 45, 52, 58, 55, 63, 68, 66, 74];
+    return {
+      brand: this.props.brand ?? 'Innvoket Tech',
+      showFounding: this.props.showFoundingOffer ?? true,
+      wide: !narrow,
+      navBg: scrolled ? 'rgba(255,255,255,.94)' : 'transparent',
+      navBorder: scrolled ? '#E3ECEF' : 'transparent',
+      calRows, booked, notBooked: !booked, filledLabel: filled + ' / 15 booked',
+      calBorder: booked ? '#22C55E' : '#E3ECEF',
+      calShadow: booked ? '0 0 0 6px rgba(34,197,94,.12), 0 24px 56px rgba(34,197,94,.16)' : '0 1px 2px rgba(16,38,45,.04), 0 24px 56px rgba(16,38,45,.08)',
+      hiwDir: narrow ? 'column' : 'row-reverse',
+      stickyTop: narrow ? '64px' : '120px',
+      visH: narrow ? '340px' : '460px',
+      stepH: narrow ? '55vh' : '72vh',
+      op0: active === 0 ? 1 : 0, op1: active === 1 ? 1 : 0, op2: active === 2 ? 1 : 0, op3: active === 3 ? 1 : 0,
+      so0: active === 0 ? 1 : 0.35, so1: active === 1 ? 1 : 0.35, so2: active === 2 ? 1 : 0.35, so3: active === 3 ? 1 : 0.35,
+      typed: q.slice(0, Math.min(p1, q.length)), results,
+      reviewCount: 38 + Math.min(p2, 16) * 3, reviews,
+      s3a: p3 >= 3, s3b: p3 >= 6, s3c: p3 >= 8,
+      patients,
+      bars: barH.map((h, i) => ({ h: h + '%', c: i === barH.length - 1 ? '#2EC4B6' : '#CFE7EA' })),
+      f1: ['Clinic website with online booking button', 'Google Maps and local search', '2 condition pages a month', 'Automatic review requests', 'Missed-call text back', 'Monthly report'],
+      f2: ['Google Ads management', '4 condition pages a month', 'Patient reactivation and recall', 'Year-end benefits campaign', 'Live tracking dashboard'],
+      f3: ['Facebook and Instagram ads', 'Social media management', '24/7 AI receptionist', 'Multilingual pages', 'Strategy call every two weeks'],
+      why: [
+        { n: '01', t: 'Clinic-focused', d: 'We understand MVA, WSIB/WCB and extended benefits patients, and how they choose a clinic.' },
+        { n: '02', t: 'One team for everything', d: 'Website, Google, ads, reviews and patient follow-up, handled together.' },
+        { n: '03', t: 'Plain-language reporting', d: 'A short monthly report on inquiries, bookings and cost per new patient.' },
+        { n: '04', t: 'No long contracts', d: 'A 3-month start, then month-to-month.' },
+        { n: '05', t: 'Multilingual reach', d: 'Pages and ads in Punjabi, Hindi, Urdu and Mandarin.' }
+      ],
+      faqs
+    };
+  }
+}
+</script>
+</body>
+</html>
